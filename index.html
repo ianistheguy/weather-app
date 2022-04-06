@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="search">
+        <input type="text" class="search-bar" id="search-bar" placeholder="Enter City, State, Country">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="weather" id="weather">
+        <h2 class="city" id="city"></h2>
+        <h1 class="temp" id="temp"></h1>
+        <div class="flex">
+          <img class="icon">
+          <div class="description" id="description"></div>
+        </div>
+        <div class="humidity" id="humidity"></div>
+        <div class="wind" id="wind"></div>
+        <div class="info" id="info">
+          <p>Enter a City name, and the 2-letter Country code (and State code, if in the US)</p>
+          <p>For example, try "Las Vegas, NV, US"</p>
+          <p>or "Rio de Janeiro, BR"</p>
+        </div>
+        <div class="country-code" id="country-code">
+          <p><a href="https://www.iban.com/country-codes" target="_blank">Need help with the Country Codes?</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
